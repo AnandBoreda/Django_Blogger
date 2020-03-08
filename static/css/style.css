@@ -1,17 +1,18 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html, body{
 font-family: 'Open Sans', sans-serif;
  font-size: 100%;
  background: #FFf;
  scroll-behavior: smooth;
  background-color: lightgoldenrodyellow;
+ background: url(../images/bkimg.png);
 }
-
+.card{
+	box-shadow: 0px 0px 30px #000000;
+	padding: 2em;
+	margin-bottom: 5%;
+	border-radius: 1%;
+	background-color: white;
+}
 body a {
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -55,15 +56,15 @@ label{
           padding: 0em 2em;
     background: #4a245e;
 }
-ul.top-nag {
+ul.top-nav {
     float:left
 }
-ul.top-nag li {
+ul.top-nav li {
     display:inline-block;
     margin-right:0;
 	float:left;
 }
-ul.top-nag  a{
+ul.top-nav  a{
     color: #fff;
     font-size: 0.9em;
     font-weight: 600;
@@ -73,10 +74,10 @@ ul.top-nag  a{
     background-color: #4A245E;
     display: inline-block;
 }
-ul.top-nag  a:hover,ul.top-nag  a.active{
+ul.top-nav  a:hover,ul.top-nav  a.active{
     background-color: #3C1D4C;
 }
-ul.top-nag  a.active{
+ul.top-nav  a.active{
   color: #ffcc00;
 }
 .search-box{
@@ -216,7 +217,7 @@ ul.top-nag  a.active{
     display:block;
     color: #fff;
     vertical-align: top;
-       text-align: center;
+    text-align: center;
     margin-bottom:2em;
 }
 .top-menu ul li a{
@@ -313,9 +314,8 @@ nav a:focus {
     padding: 0;
 }
 .banner-section{
-    width: 67%;
-    float: left;
-	    padding: 2em 1em 1.5em 1em;
+    	width: 100%;
+	    padding: 1em 1em 1.5em 1em;
 		border-right: 1px solid #ddd;
 }
 /*--banner--*/
@@ -535,7 +535,7 @@ ul.side-icons li a.drib{
 /*--about--*/
 
 h3.tittle {
-    color: #333;
+    color: #FFF;
     font-size: 2em;
 	text-align:left;
 	margin-bottom:0.8em;
@@ -605,9 +605,9 @@ h3.tittle.media {
        padding: 2em 1em 1.5em 1em;
 }
 .general-text a img{
-	border-top-left-radius: 30%;
-	border-bottom-right-radius: 30%;
+	border-radius: 2%;
 }
+
 .general-text img ,.top-text img{
 	width: 100%;
 	margin-bottom: 0.7em;
@@ -827,7 +827,7 @@ a.store:hover{
 }
 /*-- contact --*/
 .contact{
-	    background: #fff;
+	background: #fff;
     float: right;
     padding: 3em 3em;
     width: 100%;
@@ -1391,10 +1391,16 @@ p.reply i{
 }
 /*--footer--*/
 .footer {
+	box-shadow: 0px 0px 15px #fff;
       padding: 2em 0;
     background-color: #111;
 }
-.footer-grid h4 {
+.footer-grid
+{
+	align-items: center;
+	align-self: center;
+	align-content: center;
+}.footer-grid h4 {
     color: #fff;
     font-size: 1.8em;
 }
@@ -1420,9 +1426,12 @@ ul.bottom i {
     margin-right: 0.5em;
 }
 .copy {
-        text-align: center;
+	box-shadow: 0px 5px 15px #fff;
+	text-align: center;
     background:#4A245E;
-    padding: 1em;
+	padding: 1em;
+	border-bottom-left-radius: 60%;
+	border-bottom-right-radius: 60%;
 	}
 .copy p {
   color: #fff;
@@ -1454,7 +1463,9 @@ ul.bottom i {
 		float: left;
 		background-color: #f26649;
 		width: 15%;
-		    padding: 3em 1em 90.95em 1em;
+		padding: 3em 1em 90.95em 1em;
+	box-shadow: 0px 0px 15px #000;
+		
 	}
 	.top-nav.about {
 		float: left;
@@ -1743,6 +1754,9 @@ ul.bottom i {
 		margin-top: 1em;
 		padding: 13px 0;
 	}
+	/* .blog{
+		width: 50%;
+		} */
 	.logo a h2 {
 		font-size: 1.6em;
 	}
@@ -1799,7 +1813,7 @@ ul.bottom i {
 	}
 	.top-nav {
 		float: left;
-		width: 15%;
+		width: 16%;
 		padding: 3em 1em 73.9em 1em;
 	}
 	.grid-section {
@@ -1941,7 +1955,7 @@ ul.bottom i {
 		float: left;
 		margin-right: 1%;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.9em;
 		padding: 20px 13px;
 	}
@@ -2162,7 +2176,7 @@ ul.bottom i {
 	}
 }
 @media (max-width:736px){
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.9em;
 		padding: 20px 12px;
 	}
@@ -2188,7 +2202,7 @@ ul.bottom i {
 	}
 }
 @media (max-width:667px){
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.9em;
 		padding: 20px 7px;
 	}
@@ -2285,7 +2299,7 @@ ul.bottom i {
 		    padding: 3em 1em 54.15em 1em;
 	}
 }
-@media (max-width: 736px){
+@media (max-width:736px){
 	.top-nav.services {
 		float: left;
 		width: 25%;
@@ -2312,7 +2326,7 @@ ul.bottom i {
 	.top-header {
        padding: 0em 1em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.8em;
 		padding: 20px 9px;
 	}
@@ -2393,7 +2407,7 @@ ul.bottom i {
 @media (max-width:600px){
 	.top-nav {
 		float: left;
-		width: 25%;
+		width: 30%;
 		padding: 3em 1em 178.29em 1em;
 	}
 	.top-nav.about {
@@ -2401,7 +2415,7 @@ ul.bottom i {
 		width: 25%;
 		padding: 3em 1em 195.05em 1em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.8em;
 		padding: 20px 7px;
 	}
@@ -2448,7 +2462,7 @@ ul.bottom i {
 		width: 72%;
 		padding: 0;
 	}
-	ul.top-nag a {
+	ul.top-nav a {
 		font-size: 0.8em;
 		padding: 20px 13px;
 	}
@@ -2535,7 +2549,7 @@ ul.bottom i {
 	.top-header {
 		padding: 0em 0.5em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.8em;
 		padding: 14px 8px;
 	}
@@ -2544,14 +2558,14 @@ ul.bottom i {
 	}
 }
 @media (max-width:384px){
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.7em;
 		padding: 20px 10px;
 	}
   span.menu {
 		width: 35px;
 		height: 35px;
-		background: url(../images/nav.png) no-repeat 0px 0px;
+		/* background: url(../images/nav.png) no-repeat 0px 0px; */
 		display: block;
 		cursor: pointer;
 		margin: 1em 9.4em;
@@ -2590,7 +2604,7 @@ ul.bottom i {
 		line-height: 1.6em;
 		font-size: 1.1em;
 	}
-	ul.top-nag a {
+	ul.top-nav a {
 		font-size: 0.6em;
 		padding: 7px 7px;
 	}
@@ -2785,12 +2799,12 @@ ul.bottom i {
 	span.menu {
 		width: 35px;
 		height: 35px;
-		background: url(../images/nav.png) no-repeat 0px 0px;
+		/* background: url(../images/nav.png) no-repeat 0px 0px; */
 		display: block;
 		cursor: pointer;
-		margin: 1em 9.4em;
+		margin: -1em 9.4em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.6em;
 		padding: 11px 9px;
 	}
@@ -2808,7 +2822,7 @@ ul.bottom i {
    span.menu {
 		width: 35px;
 		height: 35px;
-		background: url(../images/nav.png) no-repeat 0px 0px;
+		/* background: url(../images/nav.png) no-repeat 0px 0px; */
 		display: block;
 		cursor: pointer;
 		margin: 1em 7.4em;
@@ -2847,7 +2861,7 @@ ul.bottom i {
 		line-height: 1.6em;
 		font-size: 1.1em;
 	}
-	ul.top-nag a {
+	ul.top-nav a {
 		font-size: 0.6em;
 		padding: 7px 7px;
 	}
@@ -3031,14 +3045,14 @@ ul.bottom i {
 		margin-top: 1em;
 		padding: 9px 0;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
     font-size: 0.6em;
     padding: 11px 7px;
 	}
 	span.menu {
 		width: 35px;
 		height: 35px;
-		background: url(../images/nav.png) no-repeat 0px 0px;
+		/* background: url(../images/nav.png) no-repeat 0px 0px; */
 		display: block;
 		cursor: pointer;
 		margin: 0.8em 7.4em 0;
@@ -3049,7 +3063,7 @@ ul.bottom i {
   .banner-section {
 		width: 100%;
 		float: left;
-		padding: 1.2em 1em 1.5em 1em;
+		padding: 5em 1em 1.5em 1em;
 		border-right: none;
 	}
 }

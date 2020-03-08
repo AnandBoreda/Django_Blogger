@@ -8,6 +8,8 @@ html, body{
 font-family: 'Open Sans', sans-serif;
  font-size: 100%;
  background: #FFf;
+ scroll-behavior: smooth;
+ background-color: lightgoldenrodyellow;
 }
 
 body a {
@@ -53,15 +55,15 @@ label{
           padding: 0em 2em;
     background: #4a245e;
 }
-ul.top-nag {
+ul.top-nav {
     float:left
 }
-ul.top-nag li {
+ul.top-nav li {
     display:inline-block;
     margin-right:0;
 	float:left;
 }
-ul.top-nag  a{
+ul.top-nav  a{
     color: #fff;
     font-size: 0.9em;
     font-weight: 600;
@@ -71,10 +73,10 @@ ul.top-nag  a{
     background-color: #4A245E;
     display: inline-block;
 }
-ul.top-nag  a:hover,ul.top-nag  a.active{
+ul.top-nav  a:hover,ul.top-nav  a.active{
     background-color: #3C1D4C;
 }
-ul.top-nag  a.active{
+ul.top-nav  a.active{
   color: #ffcc00;
 }
 .search-box{
@@ -109,19 +111,19 @@ ul.top-nag  a.active{
 	top: 6px;
 	right: 2px;
 }
-.logo  a{
+.logo a{
 	display:block;
 }
-.logo  a h1{
-      color: #fff;
-    font-size: 2.5em;
+.logo a h2{
+    color: #fff;
+    font-size: 2em;
     font-weight: 700;
     text-align: center;
 }
-.logo  a h1:hover{
+.logo a h2:hover{
  text-decoration:none;
 }
-.logo  a h1 span{
+.logo a h2 span{
  color:#a5cd39;
 }
 .header-top-right form input[type="text"] {
@@ -311,9 +313,8 @@ nav a:focus {
     padding: 0;
 }
 .banner-section{
-    width: 67%;
-    float: left;
-	    padding: 2em 1em 1.5em 1em;
+    	width: 100%;
+	    padding: 1em 1em 1.5em 1em;
 		border-right: 1px solid #ddd;
 }
 /*--banner--*/
@@ -602,9 +603,13 @@ h3.tittle.media {
     width:33%;
        padding: 2em 1em 1.5em 1em;
 }
+.general-text a img{
+	border-top-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+}
 .general-text img ,.top-text img{
-    width: 100%;
-	    margin-bottom: 0.7em;
+	width: 100%;
+	margin-bottom: 0.7em;
 }
 .general-text p {
     font-size: 0.9em;
@@ -821,7 +826,7 @@ a.store:hover{
 }
 /*-- contact --*/
 .contact{
-	    background: #fff;
+	background: #fff;
     float: right;
     padding: 3em 3em;
     width: 100%;
@@ -1632,8 +1637,8 @@ ul.bottom i {
 		padding: 2.19em 0 0;
 		margin: 0;
 	}
-	.logo a h1 {
-      font-size: 2.2em;
+	.logo a h2 {
+      font-size: 1.8em;
 	}
 	.footer-grid h4 {
 		font-size: 1.6em;
@@ -1737,8 +1742,8 @@ ul.bottom i {
 		margin-top: 1em;
 		padding: 13px 0;
 	}
-	.logo a h1 {
-		font-size: 1.9em;
+	.logo a h2 {
+		font-size: 1.6em;
 	}
 	.top-menu ul {
 		margin-top: 6em;
@@ -1935,7 +1940,7 @@ ul.bottom i {
 		float: left;
 		margin-right: 1%;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.9em;
 		padding: 20px 13px;
 	}
@@ -2156,7 +2161,7 @@ ul.bottom i {
 	}
 }
 @media (max-width:736px){
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.9em;
 		padding: 20px 12px;
 	}
@@ -2182,7 +2187,7 @@ ul.bottom i {
 	}
 }
 @media (max-width:667px){
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.9em;
 		padding: 20px 7px;
 	}
@@ -2306,7 +2311,7 @@ ul.bottom i {
 	.top-header {
        padding: 0em 1em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.8em;
 		padding: 20px 9px;
 	}
@@ -2395,7 +2400,7 @@ ul.bottom i {
 		width: 25%;
 		padding: 3em 1em 195.05em 1em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.8em;
 		padding: 20px 7px;
 	}
@@ -2442,7 +2447,7 @@ ul.bottom i {
 		width: 72%;
 		padding: 0;
 	}
-	ul.top-nag a {
+	ul.top-nav a {
 		font-size: 0.8em;
 		padding: 20px 13px;
 	}
@@ -2499,8 +2504,8 @@ ul.bottom i {
 		padding: 1em 1em;
 		text-align: center;
 	}
-	.logo a h1 {
-		font-size: 2.5em;
+	.logo a h2 {
+		font-size: 2em;
 	}
 	.top-menu ul {
 		margin: 1em 0;
@@ -2529,7 +2534,7 @@ ul.bottom i {
 	.top-header {
 		padding: 0em 0.5em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.8em;
 		padding: 14px 8px;
 	}
@@ -2538,7 +2543,7 @@ ul.bottom i {
 	}
 }
 @media (max-width:384px){
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.7em;
 		padding: 20px 10px;
 	}
@@ -2584,7 +2589,7 @@ ul.bottom i {
 		line-height: 1.6em;
 		font-size: 1.1em;
 	}
-	ul.top-nag a {
+	ul.top-nav a {
 		font-size: 0.6em;
 		padding: 7px 7px;
 	}
@@ -2784,7 +2789,7 @@ ul.bottom i {
 		cursor: pointer;
 		margin: 1em 9.4em;
 	}
-	ul.top-nag li a {
+	ul.top-nav li a {
 		font-size: 0.6em;
 		padding: 11px 9px;
 	}
@@ -2841,7 +2846,7 @@ ul.bottom i {
 		line-height: 1.6em;
 		font-size: 1.1em;
 	}
-	ul.top-nag a {
+	ul.top-nav a {
 		font-size: 0.6em;
 		padding: 7px 7px;
 	}
@@ -3037,8 +3042,8 @@ ul.bottom i {
 		cursor: pointer;
 		margin: 0.8em 7.4em 0;
 	}
-	.logo a h1 {
-		font-size: 2.3em;
+	.logo a h2 {
+		font-size: 2em;
 	  }
   .banner-section {
 		width: 100%;
