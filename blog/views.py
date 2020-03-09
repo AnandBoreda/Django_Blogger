@@ -12,3 +12,22 @@ def contact(request):
 
 def single(request):
     return render(request, 'single.html')
+
+def lifestyle(request):
+    return render(request, 'lifestyle.html')
+
+def health(request):
+    return render(request, 'health.html')
+
+def family(request):
+    return render(request, 'family.html')
+
+def technology(request):
+    return render(request, 'technology.html')
+
+def travel(request):
+    return render(request, 'travel.html')
+
+def work(request):
+    return render(request, 'work.html')
+

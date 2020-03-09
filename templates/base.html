@@ -7,51 +7,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-<link rel="icon" type="image/png" href="../static/images/logo.png" >
+<link rel="icon" type="image/png" href="../static/images/logo1.png" >
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
 <link href='//fonts.googleapis.com/css?family=Open+Sans:700,700italic,800,300,300italic,400italic,400,600,600italic' rel='stylesheet' type='text/css'>
 <!--Custom-Theme-files-->
 	<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-		});
-	});
-</script>
 </head>
 <body>
+	<div id="hola">
+        <div id="preloader">
+        <span></span>
+        <span></span>
+          </div>
+            </div>
+	<!-- <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> -->
 	<!-- header-section-starts -->
-	<div class="full">
+	<div class="full" id="start">
 			<div class="col-sm-3 top-nav">
 						<div class="logo justify-content-center">
-							<a href="base.html"><h2 style="color:#FFF;">TechCicada</h2></a>
+							<a href="index.html"><h2 style="color:#FFF;">TechCicada</h2></a>
 						</div>
 					<div class="top-menu">
 						<!-- <span class="menu"> </span> -->
-							<ul class="cl-effect-16" style="display: block;">
-								<li><a class="active" href="index.html" data-hover="HOME">Home</a></li> 
+							<ul class="cl-effect-16" style="display: inline-block;">
+								<li><a href="index.html" data-hover="HOME">Home</a></li> 
+								<div class="dropdown ">
+									<button class="dropbtn" onclick="nav()">categories
+									  <i class="fa fa-caret-down"></i>
+									</button>
+									<div class="dropdown-content" id="cat">
+										<li><a href="lifestyle.html" data-hover="Lifestyle">Lifestyle</a></li>
+										<li><a href="health.html" data-hover="Health">Health</a></li>
+										<li><a href="family.html" data-hover="Family">Family</a></li>
+										<li><a href="technology.html" data-hover="Technology">Technology</a></li>
+										<li><a href="travel.html" data-hover="Travel">Travel</a></li>
+										<li><a href="work.html" data-hover="Work">Work</a></li>
+									</div>
+								  </div> 
 								<li><a href="about.html" data-hover="About">About</a></li>
 								<li><a href="contact.html" data-hover="CONTACT">Contact</a></li>
 							</ul>	
 							<!-- script-for-nav -->
-								<script>
+								<!-- <script>
 									$( "span.menu" ).click(function() {
 									$( ".top-menu ul" ).slideToggle(300, function() {
 										// Animation complete.
 									});
 									});
-								</script>
+								</script> -->
 				<!-- script-for-nav --> 
 							<ul class="side-icons">
-									<li><a class="fb" href="#"></a></li>
-									<li><a class="twitt" href="#"></a></li>
-									<li><a class="goog" href="#"></a></li>
-									<li><a class="youtube" href="#"></a></li>
+								<i class="fa fa-facebook-square iconi" aria-hidden="true"></i>
+								<i class="fa fa-twitter iconi" aria-hidden="true"></i>
+								<i class="fa fa-github iconi" aria-hidden="true"></i>
+								<i class="fa fa-youtube-play iconi" aria-hidden="true"></i>
 							</ul>
 			    	</div>
 			</div>
@@ -70,22 +90,28 @@
 
 							<div class="footer">
 									<div class="footer-top">
-										<!-- <div class="col-sm-4 footer-grid">
+										<div class="col-sm-4 footer-grid">
 											<h4>TechCicada</h4>
 											<ul class="bottom">
 												<li>TechCicada is a blog related to technology</li>
-												<li>If you are a tech geek subscribe to my blog </li>
+												<!-- <li>If you are a tech geek subscribe to my blog </li> -->
+												<div>
+													<i class="fa fa-facebook-square iconi" aria-hidden="true"></i>
+													<i class="fa fa-twitter iconi" aria-hidden="true"></i>
+													<i class="fa fa-github iconi" aria-hidden="true"></i>
+													<i class="fa fa-youtube-play iconi" aria-hidden="true"></i>
+												</div>
 											</ul>
-										</div> -->
-										<div class="col-sm-6 footer-grid">
+										</div>
+										<div class="col-sm-4 footer-grid">
 											<h4>Message Us Now</h4>
 												<ul class="bottom">
 												<li><i class="glyphicon glyphicon-home"></i>Available 24/7 </li>
 												<li><i class="glyphicon glyphicon-envelope"></i><a href="mailto:techcicada@gmail.com">TechCicada@gmail.com</a></li>
 											</ul>
 										</div>
-										<div class="col-sm-6 footer-grid">
-											<h4>Address Location</h4>
+										<div class="col-sm-4 footer-grid">
+											<h4>Address</h4>
 											<ul class="bottom">
 												<li><i class="glyphicon glyphicon-map-marker"></i>Bala Nagar, Hyderabad </li>
 												<li><i class="glyphicon glyphicon-earphone"></i>phone: (+91) 837-456-3449 </li>
@@ -100,6 +126,12 @@
 				</div>
 			</div>
 		<!--//footer-->
-		<a href="" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		<a href="#start" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type="text/javascript">
+		setTimeout(function() {
+	$('#hola').fadeOut('slow',0);
+	$('#start').fadeIn('slow',1);
+}, 1200);
+	</script>
 	</body>
 </html>
