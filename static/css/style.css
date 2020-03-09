@@ -80,7 +80,7 @@ font-family: 'Open Sans', sans-serif;
   }
   .mystyle{
 	  display: block;
-	  padding-top: 2em;
+	  /* padding-top: 2em; */
   }
 /* .dropdown:hover .dropdown-content {
 	display: block;

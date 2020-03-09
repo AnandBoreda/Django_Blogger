@@ -1,6 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Post
+from django.views.generic import ListView, DetailView
 # Create your views here.
+class HomePageView(ListView):
+    model = Post
+    template_name = 'index.html'
+    
+class PostDetailView(DetailView):
+    model = Post
+    template_name = 'single.html'
+
+
 def index(request):
     return render(request, 'index.html')
 

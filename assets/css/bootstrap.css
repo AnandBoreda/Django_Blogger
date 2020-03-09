@@ -288,7 +288,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #1B242F;
+  color: purple;
   text-decoration: none;
 }
 a:hover,
@@ -502,7 +502,7 @@ cite {
   color: #999;
 }
 .text-primary {
-  color: #1B242F;
+  color: purple;
 }
 a.text-primary:hover {
   color: #3071a9;

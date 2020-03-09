@@ -1,14 +1,13 @@
-{% extends 'base.html'%}
-{% load static %}
+{% extends 'base.html' %}
 {% block content %}
 <div class="card">
 	<h3 class="tittle" style="color: purple;">Single Page <i class="glyphicon glyphicon-file"></i></h3>
 			<div class="single">
-			   <img src="{% static 'images/3.jpg' %}" class="img-responsive" alt="" />
+			   <img src="{{ post.cover.url }}" class="img-responsive" alt="" />
 			    <div class="b-bottom"> 
-			      <h5 class="top"><a href="#">What turn out consetetur sadipscing elit</a></h5>
-				   <p class="sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since,Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's standard dummy text ever since Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-			      <p>On Aug 25 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
+			      <h3 class="top"><a href="#">{{ post.title }}</a></h3>
+				   <p class="sub">{{ post.content }}</p>
+			      <p>{{ post.created_date }} <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a></p>
 				 
 				</div>
 			 </div>
@@ -28,4 +27,4 @@
 				<div class="clearfix"></div>
 </div>
 		   
-{% endblock %}
+{% endblock content %}
