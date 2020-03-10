@@ -12,10 +12,11 @@ class Post(models.Model):
         )
         cover = models.FileField(default='')
         title = models.CharField(max_length=2000,default='')
+        slug = models.SlugField(default='')
         category = models.CharField(max_length=2000, choices = CATEGORY_CHOICES,default='')
         created_date = models.DateTimeField(default='')
         content = models.TextField(default='')
-        # slug = models.SlugField(default='')
+        
         
         class Meta:
             ordering = ['-created_date']

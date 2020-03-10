@@ -10,8 +10,7 @@ class HomePageView(ListView):
 class PostDetailView(DetailView):
     model = Post
     template_name = 'single.html'
-
-
+    
 def index(request):
     return render(request, 'index.html')
 
