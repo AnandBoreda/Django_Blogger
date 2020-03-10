@@ -976,7 +976,7 @@ p.lom{
 	float:left;
 	width:45%;
 	}
-.in-left input[type="text"], .in-right textarea{
+.in-left input[type="text"],input[type="email"], textarea{
 	width: auto ;
     padding: 15px 30px;
     border: none;
@@ -993,23 +993,23 @@ p.lom{
     font-weight: 600;
     text-transform: uppercase;
 }
-.in-left input[type="text"]:focus,.in-right textarea:focus{
+.in-left input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
 	color: #FFF;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
 	background-color: rgba(108, 5, 134, 0.747);
 	border: none;
 }
-.in-right{
+{
 	float:right;
 	width:50%;
 	}
-.in-right textarea{
+ textarea{
 	    resize: none;
     min-height: 257px;
     margin: 0;
     margin-bottom: 2em;
 	}
-.in-right input[type="submit"]{
+ input[type="submit"]{
 	outline: none;
     border: none;
     background: #4A245E;
@@ -1026,7 +1026,7 @@ p.lom{
     -ms-transition: 0.5s all;
     text-transform: uppercase;
 }
-.in-right input[type="submit"]:hover{
+ input[type="submit"]:hover{
 	background:#F04709;
 	color:#fff;
 	}
@@ -1844,7 +1844,7 @@ ul.bottom i {
 		width: 15%;
 		padding: 3em 1em 16em 1em;
 	}
-	.in-right input[type="submit"] {
+	 input[type="submit"] {
 		font-size: 16px;
 		padding: 10px 0px;
 		width: 59%;
@@ -2361,11 +2361,11 @@ ul.bottom i {
 		float: left;
 		width: 100%;
 	}
-	.in-right {
+	 /* {
 		float: right;
 		width: 100%;
-	}
-	.in-right textarea {
+	} */
+	 textarea {
 		resize: none;
 		min-height: 171px;
 		margin: 0;
@@ -2466,11 +2466,11 @@ ul.bottom i {
 		float: left;
 		width: 100%;
 	}
-	.in-right {
+	 /* {
 		float: right;
 		width: 100%;
-	}
-	.in-right textarea {
+	} */
+	 textarea {
 		resize: none;
 		min-height: 171px;
 		margin: 0;
@@ -3175,4 +3175,10 @@ ul.bottom i {
 		padding: 8em 1em 1.5em 1em;
 		border-right: none;
 	}
+}
+.modal-content{
+    text-align: center;
+    border-radius: 15px;
+    color:rgb(45, 45, 90);
+    background-color: white;
 }

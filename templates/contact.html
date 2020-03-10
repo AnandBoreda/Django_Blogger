@@ -17,27 +17,40 @@
 					<span>mail us at: <a href="mailto:techcicada@gmail.com?Subject=regarding%20blog">techcicada@gmail.com</a> </span></p>
 		</div>
 		<div class="clearfix"> </div>
+		{% if message_name %}
+		<div class="in-left">
+			<br><br><br>
+		<h3><a style="color: #f26649;">Thanks for contacting us, </a><a style="color: purple;">{{ message_name }}</a>!!</h3>
+					<br>
+		<h3><a style="color: #f26649;">we will reach you at  </a><a style="color: purple;">{{ message_email }}</a></h3>
+					<br>
+		</div>
+		{% else %}
 		<div class="contact-left1">
 			<h3>Drop a Message</h3>
 			<div class="in-left">
-				<form>
-					<p class="your-para">Your Name :</p>
-							<input type="text">
+				<form action="{% url 'contact' %}" method="POST">
+
+					{% csrf_token %}
+
+							<p class="your-para">Your Name :</p>
+							<input name="cName" type="text" autocomplete="name" required>
+
 							<p class="your-para">Your Mail :</p>
-							<input type="text">
-							<p class="your-para">Phone Number:</p>
-							<input type="text">
-				</form>
-			</div>
-			<div class="in-right">
-				<form>
-					<p class="your-para">Message:</p>
-					<textarea cols="20" rows="6"></textarea>
-					<input type="submit" value="Submit">
+							<input name="cEmail" type="email" autocomplete="email" required>
+
+							<!-- <p class="your-para">Phone Number:</p>
+							<input name="cNumber" type="text" autocomplete=""> -->
+
+							<p class="your-para">Message:</p>
+							<textarea name="cmessage" cols="20" rows="6"></textarea>
+
+							<input type="submit" value="Submit">
 				</form>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
+		{% endif %}
 		<div class="contact-right1">
 			<h3><span>TechCicada</span></h3>
 			<h4><label>Tech Blog</label></h4>
