@@ -4,10 +4,10 @@ from blog.models import Post
 from .serializers import PostSerializer
 # Create your views here.
 
-class PostAPIView(generics.RetrieveUpdateDestroyAPIView):
+class PostAPIView(generics.RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
-class PostAPIDetailView(generics.ListCreateAPIView):
+class TechCicadaByAnandBoreda(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer

@@ -20,7 +20,7 @@
 <div class="card">
 	
 			<div class="single">
-			   <img src="{{ post.cover.url }}" class="img-responsive" alt="" />
+			   <img src="{{ post.cover.url }}" class="img-responsive" alt="" id="postimg" onclick="postimgfun()" />
 			    <div class="b-bottom"> 
 			      <h3 class="top"><a href="#">{{ post.title }}</a></h3>
 				   <p class="sub">{{ post.content }}</p>
@@ -42,7 +42,11 @@
 									<li><a href="#"><i class="tin"> </i></a></li>
 									<li><a href="#"><i class="message"> </i></a></li>				
 								</ul>
-								<a><button style="float: right;"><i class="arrow"></i></a></button>
+								<a><button style="float: right;" onclick="playAudio()" >
+									<audio id="copyaudio">
+										<source src="../static/audio/copied.mp3">
+									</audio>
+									<i class="arrow"></i></a></button>
 									
 								<div class="clearfix"> </div>
 						   </div>
@@ -89,6 +93,15 @@
 			});
 		}
 	}
-</script>
-		   
+	function postimgfun() {
+   var element = document.getElementById("postimg");
+   element.classList.toggle("postimgstyle");
+	}
+
+	var x = document.getElementById("copyaudio"); 
+
+	function playAudio() { 
+	x.play(); 
+	} 
+</script>		   
 {% endblock content %}

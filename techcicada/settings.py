@@ -131,7 +131,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES':[
-        'rest_framework.permissions.IsAdminUser'
+        'rest_framework.permissions.IsAuthenticated'
     ]
 }
 #django mail hosting

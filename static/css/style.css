@@ -675,6 +675,10 @@ color:#4a245e;
     line-height: 1.9em;
     color: #777;
 }
+.postimgstyle{
+	transform: scale(1.6);
+	transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
+}
 /*--banner-right-text--*/
 h3.tittle.media {
     margin-top: 1em;
@@ -976,14 +980,14 @@ p.lom{
 	float:left;
 	width:45%;
 	}
-.in-left input[type="text"],input[type="email"], textarea{
+.in-left input[type="text"], input[type="email"] ,textarea{
 	width: auto ;
-    padding: 15px 30px;
-    border: none;
-    border-bottom: 1px solid rgb(105, 231, 221);
-    transition: all .5s;
-    font-size: 16px;
-    background-color: #f26649;
+	padding: 15px 30px;
+	border: none;
+	border-bottom: 1px solid rgb(105, 231, 221);
+	transition: all .5s;
+	font-size: 16px;
+	background-color: #f26649;
 	border-radius: 6px;
 	}
 	p.your-para {
@@ -999,10 +1003,7 @@ p.lom{
 	background-color: rgba(108, 5, 134, 0.747);
 	border: none;
 }
-{
-	float:right;
-	width:50%;
-	}
+
  textarea{
 	    resize: none;
     min-height: 257px;

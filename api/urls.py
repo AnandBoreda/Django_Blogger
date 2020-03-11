@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import PostAPIView, PostAPIDetailView
+from .views import PostAPIView, TechCicadaByAnandBoreda
 
 urlpatterns = [
-    path('', PostAPIDetailView.as_view(), name='api_detail'),
+    path('', TechCicadaByAnandBoreda.as_view(), name='api_detail'),
     path('<int:pk>', PostAPIView.as_view(), name='list'),
 ]
