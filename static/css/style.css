@@ -101,6 +101,13 @@ font-family: 'Open Sans', sans-serif;
 	display: none;
 	text-align:center;
 }
+#mainlogoimg{
+	border-radius: 20%;
+}
+.fa-whatsapp{
+	color: green;
+	padding: 2px;
+}
 .fa-moon-o{
 	color: black;
 }

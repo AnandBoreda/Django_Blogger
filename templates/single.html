@@ -22,8 +22,12 @@
 								<ul class="social-share">
 									<li><span>SHARE</span></li>
 									<li><a href="https://www.facebook.com/sharer/sharer.php?u=https://boredanand.pythonanywhere.com/{{post.title}}"><i> </i></a></li>						
-									<li><a href="#"><i class="tin"> </i></a></li>
-									<li><a href="#"><i class="message"> </i></a></li>				
+									<li><a href="http://twitter.com/share?text=you people should read this post.&url=https://boredanand.pythonanywhere.com/{{post.id}}&hashtags=blog,{{post.category}},{{post.title}}" target="_blank"><i class="tin"> </i></a></li>
+									<!-- <li><a href="#"><i class="message"> </i></a></li>	 -->
+									<a href="whatsapp://send?text=http://boredanand.pythonanywhere.com/{{post.id}}"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>					
+									<!-- <a href="http://pinterest.com/pin/create/button/?url={boredanand.pythonanywhere.com{{post.id}} }&media={ {{post.cover}} }&description={ {{post.title}} }" class="pin-it-button" count-layout="horizontal" target="_blank">
+										<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
+									</a> -->
 								</ul>
 								<a><button id="cpbtn" style="float: right;" onclick="playAudio()" >
 									<audio id="copyaudio">

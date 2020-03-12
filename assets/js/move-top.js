@@ -9,6 +9,8 @@ function nav() {
     element.classList.toggle("mystyle");
  }
 
+
+ 
 //  $(window).load(function(){
 //     setTimeout(function(){
 //         $('#preloader').velocity({
