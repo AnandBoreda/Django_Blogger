@@ -1320,30 +1320,37 @@ ul.social-share {
     margin: 2em 0;
 }
 ul.social-share li{
-list-style:none;
-display:inline-block;
-}
+	list-style:none;
+	display:inline-block;
+	}
 ul.social-share li i,i.arrow,p.reply {
-       background: url(../images/icons2.png)no-repeat -4px -3px;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    margin: 0 12px;
-    vertical-align: middle;
+		background: url(../images/icons2.png)no-repeat -4px -3px;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin: 0 12px;
+	vertical-align: middle;
+}
+#aboutdesc,#aboutdesc h3{
+	text-align: center;
 }
 ul.social-share li  i.tin:hover,ul.social-share li  i.message:hover,p.reply i:hover,i.arrow:hover,ul.social-share li i:hover{
-  opacity:0.7;
+	opacity:0.7;
 }
 ul.social-share li  i.tin{
-	    background: url(../images/icons2.png)no-repeat -30px -3px;
+		background: url(../images/icons2.png)no-repeat -30px -3px;
 }
 ul.social-share li  i.message{
-     background: url(../images/icons2.png)no-repeat -55px -3px;
+		background: url(../images/icons2.png)no-repeat -55px -3px;
 }
 i.arrow{
-  background: url(../images/icons2.png)no-repeat -79px -3px;
-    display: inline-block;
-    float: right;
+	background: url(../images/icons2.png)no-repeat -79px -3px;
+	display: inline-block;
+	float: right;
+}
+.social-share a{
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .copy-notification {
 	color: #ffffff;
@@ -1360,7 +1367,7 @@ i.arrow{
 	text-align:center;
 }
 p.reply i{
-      background: url(../images/icons2.png)no-repeat -4px -3px;
+      /* background: url(../images/icons2.png)no-repeat -4px -3px; */
   display: inline-block;
   vertical-align: middle;
   margin: 0 14px 0 0px;
