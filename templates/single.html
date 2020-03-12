@@ -20,27 +20,25 @@
 			  <div class="single-bottom">
 								<div class="single-middle">
 								<ul class="social-share">
-									<li><span>SHARE</span></li>
-									<li><a href="https://www.facebook.com/sharer/sharer.php?u=https://boredanand.pythonanywhere.com/{{post.title}}"><i> </i></a></li>						
-									<li><a href="http://twitter.com/share?text=you people should read this post.&url=https://boredanand.pythonanywhere.com/{{post.id}}&hashtags=blog,{{post.category}},{{post.title}}" target="_blank"><i class="tin"> </i></a></li>
-									<!-- <li><a href="#"><i class="message"> </i></a></li>	 -->
-									<a href="whatsapp://send?text=http://boredanand.pythonanywhere.com/{{post.id}}"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>					
-									<!-- <a href="http://pinterest.com/pin/create/button/?url={boredanand.pythonanywhere.com{{post.id}} }&media={ {{post.cover}} }&description={ {{post.title}} }" class="pin-it-button" count-layout="horizontal" target="_blank">
-										<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
-									</a> -->
+									<span>SHARE</span>
+									<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}{{ object.get_absolute_url }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>				
+									<a href="http://twitter.com/share?text=you people should read this post.&url={{ request.build_absolute_uri }}{{ object.get_absolute_url }}&hashtags=blog,{{post.category}},{{post.title}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									<a href="whatsapp://send?text={{ request.build_absolute_uri }}{{ object.get_absolute_url }}"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+									<!-- <a href="http://pinterest.com/pin/create/button/?url={{ request.build_absolute_uri }}{{ object.get_absolute_url }}&media={{post.cover}}&description={{post.title}}" class="pin-it-button" count-layout="horizontal" target="_blank"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>				 -->
 								</ul>
-								<a><button id="cpbtn" style="float: right;" onclick="playAudio()" >
-									<audio id="copyaudio">
-										<source src="../static/audio/copied.mp3">
-									</audio>
-									<i class="arrow"></i></a></button>
+								<a><button id="cpbtn" style="float: right;" onclick="playAudio()">
+										<audio id="copyaudio">
+											<source src="../static/audio/copied.mp3">
+										</audio>
+										<i class="arrow"></i></a>
+									</button>
 									
 								<div class="clearfix"> </div>
 						   </div>
 						</div>
-						<div class="fb-like" data-href="https://boredanand.pythonanywhere/{{post.id}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+						<div class="fb-like" data-href="{{ request.build_absolute_uri }}{{ object.get_absolute_url }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
 				<div class="clearfix"></div>
-				<div class="fb-comments" data-href="https://boredanand.pythonanywhere/{{post.id}}" data-width="" data-numposts="15"></div>
+				<div class="fb-comments" data-href="{{ request.build_absolute_uri }}{{ object.get_absolute_url }}" data-width="" data-numposts="15"></div>
 </div>
 
 <script type="text/javascript">
